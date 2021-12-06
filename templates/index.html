@@ -50,7 +50,7 @@
 					{% for category in categories %}
 						<li><a href="{% url 'web:category' %}?category={{category.name}}">{{category.name}}</a></li>
 					{% endfor %}
-						<li><a href="#">All</a></li>
+						<li><a href="{% url 'web:category' %}?category=All">All</a></li>
 					</ul>
 				</div>
 				<div class="bottom">
