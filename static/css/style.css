@@ -121,9 +121,6 @@ img{
 }
 
 
-	max-width:980px;
-}
-
 ol,ul,li{
     list-style: none;
     text-decoration: none;
@@ -169,8 +166,8 @@ img{
     justify-content:space-between;
     align-items: center;
     background: #58cccd;
-    padding: 6% 0%;
-    border-radius: 20px;
+    padding: 35px 0%;
+    border-radius: 12px;
 }
 
 #about div.container div.left { 
@@ -205,9 +202,10 @@ img{
 
 #about div.container div.right p { 
     width: 84%;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     margin-bottom: 20px;
+    line-height: 2em;
 }
 
 #about div.container div.right p b{
