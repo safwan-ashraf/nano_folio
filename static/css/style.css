@@ -378,3 +378,13 @@ footer p.footer{
     text-align: center;
     padding: 2% 0;
 }
+div.single{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+div.single img{
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}

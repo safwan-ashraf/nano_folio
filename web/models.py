@@ -4,11 +4,12 @@ from django.db.models.deletion import CASCADE
 
 # Create your models here.
 class Gallery(models.Model):
-    image = models.ImageField(upload_to="gallery/")
+    thumbnail = models.ImageField(upload_to="gallery/")
     category = models.ForeignKey("web.Category",on_delete=CASCADE)
+    image = models.FileField(upload_to="gallery/",blank=True,null=True)
 
     def __str__(self):
-        return str(self.image)
+        return str(self.thumbnail)
 
 
 class Category(models.Model):

@@ -1,6 +1,6 @@
 import json
 from django import forms
-from django.shortcuts import render
+from django.shortcuts import render,redirect, get_object_or_404
 from django.conf import settings
 from django.http import response,JsonResponse
 from django.http.response import HttpResponse
@@ -93,3 +93,11 @@ def contact(request):
         }
 
     return HttpResponse(json.dumps(response_data),content_type="application/javascript")
+
+
+def product(request,pk):
+    product = Gallery.objects.get(pk=pk)
+    context = {
+        "product" : product
+    }
+    return render(request,"product.html",context=context)	
